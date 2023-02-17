@@ -1,0 +1,2 @@
+#!/binn/bash
+gcc -c $CFILE -o `echo | cut -d "." -f 1`.o 
