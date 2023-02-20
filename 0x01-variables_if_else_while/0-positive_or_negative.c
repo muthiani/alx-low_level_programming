@@ -9,7 +9,7 @@
  * variable n and prints whether the value is
  * positive, negative or zero.
  *
- * Returns: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
