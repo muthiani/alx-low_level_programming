@@ -5,7 +5,7 @@
 /**
  * main - Entry point
  *
- * Description: Assigns random number to the 
+ * Description: Assigns random number to the
  * variable n and prints whether the value is
  * positive, negative or zero.
  *
@@ -18,7 +18,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
 	if (n > 0)
 		printf("%d is positive\n", n);
 	else if (n < 0)
