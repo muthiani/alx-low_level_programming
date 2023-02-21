@@ -27,8 +27,11 @@ int main(void)
 						putchar(' ');
 						putchar('0' + k);
 						putchar('0' + l);
-						putchar(',');
-						putchar(' ');
+						if (i + j + k + l < 35)
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
