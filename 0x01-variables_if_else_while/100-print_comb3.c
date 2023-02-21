@@ -10,27 +10,24 @@
 
 int main(void)
 {
-	int digit1 = 0, digit2;
+	int i, j;
 
-	while (digit1 <= 9)
+	for (i = 0; i< 10; i++)
 	{
-		digit2 = 0;
-		while (digit2 <= 9)
+		for (j = i; j < 10; j++)
 		{
-			if (digit1 != digit2 && digit1 < digit2)
+			if (i != j && j > i)
 			{
-				putchar(digit1 + 48);
-				putchar(digit2 + 48);
+				putchar('0' + i);
+				putchar('0' + j);
 
-				if (digit1 + digit2 != 17)
+				if (i + j < 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			++digit2;
 		}
-		++digit1;
 	}
 	putchar('\n');
 
