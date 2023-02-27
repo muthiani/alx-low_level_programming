@@ -1,6 +1,6 @@
 /**
  * reset_to_98 - Updates value of parameter pointer points
- * @*n: Pointer to int
+ * @n: Pointer to int
  *
  * Return: Void
  */
