@@ -8,7 +8,7 @@
  * Return: * pointer
  */
 
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src, int n)
 {
 	int i, j;
 
@@ -18,7 +18,7 @@ char *_strcat(char *dest, char *src)
 		i++;
 	
 	/*iterate second loop until null byte*/
-	for (j = 0; src[j]; j++)
+	for (j = 0; j < n; j++)
 		/*append src characters to dest*/
 		dest[i++] = src[j];
 
