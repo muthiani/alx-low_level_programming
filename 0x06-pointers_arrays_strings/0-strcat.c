@@ -8,19 +8,19 @@
  * Return: * pointer
  */
 
-char *_strcat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
-	int i, j;
+	int i = 0, j;
 
-	i = 0;
 	/*find terminating null byte*/
 	while(dest[i])
 		i++;
 	
 	/*iterate second loop until null byte*/
-	for (j = 0; j < n; j++)
+	for (j = 0; src[j]; j++, i++)
 		/*append src characters to dest*/
-		dest[i++] = src[j];
+		dest[i] = src[j];
+	dest[i] = '\0';
 
 	return (dest);
 }
